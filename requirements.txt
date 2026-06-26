@@ -1,0 +1,3 @@
+# Core demo (python3 demo.py) and tests are pure standard library.
+# Only the test runner is needed to run the suite:
+pytest>=7.0

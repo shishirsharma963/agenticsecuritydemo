@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.venv/
+venv/
+
+# Personal interview prep — never publish
+INTERVIEW_NOTES.md
+*.local.md
+*.pdf
