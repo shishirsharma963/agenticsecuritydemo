@@ -1,0 +1,44 @@
+[
+  {
+    "contact_id": "CUST-1001",
+    "name": "A. Rivera",
+    "timezone": "America/New_York",
+    "consent": "opted_in",
+    "consent_date": "2026-03-12"
+  },
+  {
+    "contact_id": "CUST-1002",
+    "name": "B. Okafor",
+    "timezone": "America/Chicago",
+    "consent": "opted_in",
+    "consent_date": "2026-04-10"
+  },
+  {
+    "contact_id": "CUST-1003",
+    "name": "C. Lindgren",
+    "timezone": "America/Los_Angeles",
+    "consent": "opted_in",
+    "consent_date": "2026-01-18"
+  },
+  {
+    "contact_id": "CUST-1004",
+    "name": "D. Patel",
+    "timezone": "America/New_York",
+    "consent": "opted_out",
+    "consent_date": "2026-01-15"
+  },
+  {
+    "contact_id": "CUST-1005",
+    "name": "E. Nguyen",
+    "timezone": "America/Denver",
+    "consent": "none",
+    "consent_date": null
+  },
+  {
+    "contact_id": "CUST-1006",
+    "name": "F. Santos",
+    "timezone": "America/New_York",
+    "consent": "opted_in",
+    "consent_date": "2026-05-10"
+  }
+]
