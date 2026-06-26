@@ -1,0 +1,4 @@
+# Optional Streamlit dashboard (the 4-tab visual console).
+# Not required for the CLI demo or the tests.
+streamlit>=1.30
+pandas>=2.0

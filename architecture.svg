@@ -1,0 +1,93 @@
+<svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Agentic Security Demo architecture</title>
+  <desc>One operating pattern (classify risk, assign owner, enforce control, produce evidence, escalate exception) applied across security domains (AI governance, cloud finding triage, incident response, SOC 2). The domains and a self-scanned lab app all feed a single evidence store. Synthetic data only.</desc>
+
+  <!-- card background so it renders on light and dark GitHub themes -->
+  <rect x="0.5" y="0.5" width="959" height="439" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <text x="34" y="34" font-size="16" font-weight="700" fill="#0f172a">Agentic Security Demo: tools become controls that produce evidence</text>
+
+  <!-- legend -->
+  <rect x="600" y="22" width="12" height="12" rx="3" fill="#fef3c7" stroke="#b45309"/>
+  <text x="617" y="32" font-size="11" fill="#475569">operating pattern</text>
+  <rect x="724" y="22" width="12" height="12" rx="3" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="741" y="32" font-size="11" fill="#475569">domain</text>
+  <rect x="800" y="22" width="12" height="12" rx="3" fill="#ecfdf5" stroke="#10b981"/>
+  <text x="817" y="32" font-size="11" fill="#475569">evidence / output</text>
+
+  <!-- ===== operating pattern ===== -->
+  <text x="34" y="66" font-size="11" font-weight="700" letter-spacing="1" fill="#94a3b8">OPERATING PATTERN</text>
+  <g font-size="12.5" font-weight="600">
+    <rect x="34"  y="76" width="150" height="38" rx="9" fill="#fef3c7" stroke="#b45309"/>
+    <text x="109" y="100" text-anchor="middle" fill="#7c2d12">classify risk</text>
+    <rect x="220" y="76" width="150" height="38" rx="9" fill="#fef3c7" stroke="#b45309"/>
+    <text x="295" y="100" text-anchor="middle" fill="#7c2d12">assign owner</text>
+    <rect x="406" y="76" width="150" height="38" rx="9" fill="#fef3c7" stroke="#b45309"/>
+    <text x="481" y="100" text-anchor="middle" fill="#7c2d12">enforce control</text>
+    <rect x="592" y="76" width="150" height="38" rx="9" fill="#fef3c7" stroke="#b45309"/>
+    <text x="667" y="100" text-anchor="middle" fill="#7c2d12">produce evidence</text>
+    <rect x="778" y="76" width="150" height="38" rx="9" fill="#fef3c7" stroke="#b45309"/>
+    <text x="853" y="100" text-anchor="middle" fill="#7c2d12">escalate exception</text>
+  </g>
+  <g stroke="#b45309" stroke-width="1.4" fill="none">
+    <line x1="184" y1="95" x2="218" y2="95" marker-end="url(#arr)"/>
+    <line x1="370" y1="95" x2="404" y2="95" marker-end="url(#arr)"/>
+    <line x1="556" y1="95" x2="590" y2="95" marker-end="url(#arr)"/>
+    <line x1="742" y1="95" x2="776" y2="95" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- ===== domains ===== -->
+  <text x="34" y="146" font-size="11" font-weight="700" letter-spacing="1" fill="#94a3b8">DOMAINS  (the controls)</text>
+  <g>
+    <rect x="30"  y="156" width="210" height="88" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="135" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">1 · AI Governance</text>
+    <text x="135" y="210" text-anchor="middle" font-size="10.5" fill="#475569">classify · tokenize · route</text>
+    <text x="135" y="228" text-anchor="middle" font-size="10.5" fill="#475569">actor chain → audit</text>
+
+    <rect x="260" y="156" width="210" height="88" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="365" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">2 · Cloud Triage</text>
+    <text x="365" y="210" text-anchor="middle" font-size="10.5" fill="#475569">toxic-combination scoring</text>
+    <text x="365" y="228" text-anchor="middle" font-size="10.5" fill="#475569">ranked → owner + SLA</text>
+
+    <rect x="490" y="156" width="210" height="88" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="595" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">3 · Incident</text>
+    <text x="595" y="210" text-anchor="middle" font-size="10.5" fill="#475569">severity · roles · timeline</text>
+    <text x="595" y="228" text-anchor="middle" font-size="10.5" fill="#475569">contain → evidence</text>
+
+    <rect x="720" y="156" width="210" height="88" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="825" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">4 · SOC 2 Map</text>
+    <text x="825" y="210" text-anchor="middle" font-size="10.5" fill="#475569">control → owner → system</text>
+    <text x="825" y="228" text-anchor="middle" font-size="10.5" fill="#475569">→ continuous evidence</text>
+  </g>
+
+  <!-- ===== outputs ===== -->
+  <text x="34" y="274" font-size="11" font-weight="700" letter-spacing="1" fill="#94a3b8">OUTPUTS</text>
+
+  <!-- self-scanned lab app (muted rose) -->
+  <rect x="30" y="282" width="300" height="70" rx="10" fill="#fff1f2" stroke="#f43f5e"/>
+  <text x="180" y="308" text-anchor="middle" font-size="13" font-weight="700" fill="#9f1239">Self-scanned lab app</text>
+  <text x="180" y="328" text-anchor="middle" font-size="10.5" fill="#be123c">secret · SAST · unauth-endpoint scan</text>
+  <text x="180" y="344" text-anchor="middle" font-size="10.5" fill="#be123c">gated in CI · scans only itself</text>
+
+  <!-- evidence store (green) -->
+  <rect x="360" y="282" width="570" height="70" rx="10" fill="#ecfdf5" stroke="#10b981"/>
+  <text x="645" y="308" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">Evidence store</text>
+  <text x="645" y="328" text-anchor="middle" font-size="10.5" fill="#047857">audit records · risk-ranked tickets · incident timelines</text>
+  <text x="645" y="344" text-anchor="middle" font-size="10.5" fill="#047857">control attestations: the proof each control operated</text>
+
+  <!-- arrows: domains drop into evidence; lab feeds in from the left -->
+  <line x1="481" y1="244" x2="481" y2="280" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+  <line x1="330" y1="317" x2="358" y2="317" stroke="#475569" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+
+  <!-- thesis pill -->
+  <rect x="130" y="372" width="700" height="34" rx="17" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="480" y="394" text-anchor="middle" font-size="11.5" fill="#334155">classify risk → assign owner → enforce control → produce evidence → escalate exception</text>
+
+  <text x="480" y="426" text-anchor="middle" font-size="11" fill="#64748b">Synthetic data. Domain-neutral, AWS-native where it counts. Does not touch any real environment.</text>
+</svg>

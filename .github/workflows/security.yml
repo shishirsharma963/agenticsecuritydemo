@@ -1,0 +1,35 @@
+name: security
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test-and-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: SAST + secret scan (report)
+        # Informational scan of the deliberately-vulnerable lab app. The pass/fail
+        # gate is the test suite above, which asserts app_good is clean and the
+        # scanner catches every planted issue in app_bad. So CI stays green while
+        # proving the control works.
+        run: |
+          python -m agentic_security.scanner lab/app_bad.py || true
+          echo "--- hardened app (must be clean) ---"
+          python -m agentic_security.scanner lab/app_good.py
+
+      - name: DAST (hardened target must be clean)
+        run: python -m agentic_security.appsec.dast
